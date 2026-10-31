@@ -1,25 +1,42 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# --- Gradle & Build Files ---
+.gradle/
+build/
+bin/
+out/
+.pika/
 
-# idea
-out
-*.ipr
+# --- ForgeGradle Run Configurations & Test Environment ---
+run/
+!run/config/jei_endless_tabs.json   # Разрешаем сохранять ваш тестовый конфиг в git, если нужно (удалите '!', если не нужно)
+*.litemod
+*.jar
+
+# --- IntelliJ IDEA ---
+.idea/
 *.iws
 *.iml
-.idea
+*.ipr
+/out/
 
-# gradle
-build
-.gradle
+# --- Eclipse ---
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
 
-# other
-eclipse
-run
+# --- Operating System & Temp Files ---
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log
+logs/
+crash-reports/
+
+# --- Visual Studio Code ---
+.vscode/
+
 
 # Files from Forge MDK
 forge*changelog.txt
