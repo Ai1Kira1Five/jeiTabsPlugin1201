@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class TabInventoryProvider implements ICapabilitySerializable<CompoundTag> {
     // 9 вкладок * 48 слотов (8x6) = 432 ячейки памяти
-    private final ItemStackHandler inventory = new ItemStackHandler(432);
+    private final ItemStackHandler inventory = new ItemStackHandler(36);
     private final LazyOptional<ItemStackHandler> optional = LazyOptional.of(() -> inventory);
 
     @Override
